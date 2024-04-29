@@ -17,15 +17,7 @@ echo "Instalando o OpenJDK $openjdk_version e JRE"
 apt-get update
 apt install -y openjdk-"$openjdk_version"-jdk openjdk-"$openjdk_version"-jre
 
-echo "Instalando Jenv"
-git clone https://github.com/jenv/jenv.git ~/.jenv
-echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(jenv init -)"' >> ~/.zshrc
-eval "$(jenv init -)"
-jenv enable-plugin export
 
-echo "Listando JDKs gerenciados"
-jenv versions
-echo "Para configurar a versão global, utilize: jenv global <versão>"
-echo "Para configurar a versão local, utilize: jenv local <versão>"
-echo "Para configurar a versão do shell, utilize: jenv shell <versão>"
+echo "
+Você pode instalar o JENV
+git clone https://github.com/jenv/jenv.git ~/.jenv"
