@@ -1,0 +1,1 @@
+Sempre rode os scripts usando o sudo e de permisão de execução a eles chmod +x NOME.sh
